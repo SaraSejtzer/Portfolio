@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css-styleshead.css">
+    <!--<link rel="stylesheet" href="css-stylesmain.css">-->
+    <title> Sejtzer </title>
+    <style>
+        main{
+            margin-top: 120px;
+            display: flex;
+            justify-content: center;
+        }
+        .shift {
+            width: 100%;
+            max-width:600px
+        }
+        .shift2 {
+            width: 100%;
+            max-width:600px
+        }
+        main {
+            display: grid;
+            grid-template-areas: 
+                'imgup imgup slogan slogan'
+                'imgup imgup slogan slogan'
+                'imgup imgup imgdown imgdown'
+                'slo2 slo2   imgdown imgdown'
+                '. .   imgdown imgdown';
+        }
+        .shifting {
+            grid-area: imgup;
+        }
+        .shifting2 {
+            grid-area: imgdown;
+        }
+        .tagline {
+            grid-area: slogan;
+            margin: 120px 20px;
+            width: 500px;
+            height: auto;
+        }
+        .tagline p{
+            font-size: 30px;
+        }
+        .tagline h2{
+            font-size: 70px;
+        }
+        .tagline2 {
+            grid-area: slo2;
+            margin: 120px 20px;
+            width: 500px;
+            height: auto;
+        }
+    </style>
+</head>
+<body> 
+    <header class="container">
+             <div class="background-img">
+                 
+             </div>
+             <section class="header">
+                <img class="logo" src="logo31.PNG" alt="logo saying Sejtzer">
+                 <a href="main-page.html"><h2 class="header"> Sara R. Sejtzer Herlet </h2></a>
+                <div class="menubar">
+                    <a href="illustrations.html"> Illustrations </a>
+                     <a href="background.html">  Background </a>
+                     <a href="project.html">  Projects </a>
+                     <a href="contact.html">  Contact </a>
+                </div>
+             </section>
+    </header>
+     <main>
+        <div class="shifting">
+          <img class="shift" src="IMG_0352-1.PNG" alt="A digital drawing of a woman" >
+          <img class="shift" src="IMG_0339.PNG" alt="A digital drawing of a woman" >
+          <img class="shift" src="IMG_0357.PNG" alt="A digital drawing of a woman">
+        </div>
+        <div class="tagline">
+           <h2>A pencil stroke of ideas</h2> 
+           <p>From the mind to the hand, to a stroke of an idea is easy, however, the right idea is another story. </p>
+        </div>
+        <div class="shifting2">
+          <img class="shift2" src="IMG_0411.PNG" alt="A digital drawing of a woman" >
+          <img class="shift2" src="IMG_0375.PNG" alt="A digital drawing of a woman" >
+          <img class="shift2" src="IMG_20190725_144028_652.jpg" alt="A digital drawing of a set of lips and a nose">
+        </div>
+        <div class="tagline2">
+           <h2 style="font-size: 60px;">creativity</h2> 
+           <p style="font-size: 30px;">breeds ideas. Ideas breed hard work. Hardwork breeds the best version.  </p>
+        </div>
+    </main>
+    <footer>
+       <img  src="logo.png" alt="instagramlogo" >
+    </footer>
+    <script>
+        var myIndex = 0;
+        carousel();
+        carousel2();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("shift");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 3000); // Change image every 3 seconds
+        }
+        function carousel2() {
+          var i;
+          var x = document.getElementsByClassName("shift2");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel2, 3000); // Change image every 3 seconds
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+/*added header
+------------*/
+.subnav {
+    background-color: white;
+    position:fixed;
+    top:100px;
+    left:0;
+    /*color:white;*/
+    display:flex;
+    font-size: 20px;
+    width:100%;
+    justify-content: center;    
+}
+.subnav a{
+    padding: 5px;
+    margin: 5px;
+    padding-left: 8px;
+    color:black;
+    
+}
+.subnav a:hover {
+    text-decoration: underline;
+}
+/*Main
+------------*/
+.mainsec {
+    margin-top: 140px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-areas:
+    'img1      img1  img1 img1'    
+    'section1  section1 sectionA  sectionA'
+    'section1  section1 img2      img2'    
+    'section2 section2   sectionB sectionB'
+    'section2 section2   sectionB sectionB';
+    grid-gap: 20px;
+}
+.sec1 {
+    grid-area: section1;
+}
+.sec2 {
+    grid-area: section2;
+}
+.eyes {
+    grid-area: img1;
+    width: 100%;
+    max-width: 1500px;
+    
+}
+.portrait {
+    grid-area: img2;
+    width: 100%;
+    
+}
+.sec1 p, .sec2 p {
+    font-size: 20px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css-styleshead.css">
+    <title> Sejtzer </title>
+    <style>
+        .form{
+            display: flex;
+            justify-content: center;
+            margin: 100px 20px;
+            padding: 20px 20px;
+            background-color: black;
+            color: white;
+            font-family: corbel, sans-serif;
+        }
+        .send-knap {
+            color: black;
+            background-color: white;
+            padding: 5px 10px;
+            border: none;
+        }
+    </style>
+</head>
+<body> 
+    <header class="container">
+             <div class="background-img">
+                 
+             </div>
+             <section class="header">
+                <img class="logo" src="logo31.PNG" alt="logo saying Sejtzer">
+                 <a href="main-page.html"><h2 class="header"> Sara R. Sejtzer Herlet </h2></a>
+                <div class="menubar">
+                    <a href="illustrations.html"> Illustrations </a>
+                     <a href="background.html">  Background </a>
+                     <a href="project.html">  Projects </a>
+                     <a href="contact.html">  Contact </a>
+                </div>
+             </section>
+    </header>
+     <section class="form">
+        <form action="send-afsted.php">
+            <!-- formular med én linje -->
+            <p>First name</p>
+            <input type="text" name="fornavn"  autocomplete="on">
+            <p>Last name</p>
+            <input type="text" name="efternavn" required>
+            <p>Email</p>
+            <input type="email" name="email" autofocus>
+            <!-- select box (drop-down) -->
+            <p>Reason for reaching out</p>
+            <select name="bil">
+                <option>Want a commision</option>
+                <option>Want to hire</option>
+                <option>Other</option>
+            </select>
+            <!-- formular med flere linjer -->
+            <p>Comments</p>
+            <textarea name="comments" cols="60" rows="8"></textarea>
+            <br><br>
+            <input class="send-knap" type="submit" value="Submit">
+        </form>
+     </section>
+    <footer>
+       <img  src="logo.png" alt="instagramlogo" >
+    </footer>
+</body>
+</html>

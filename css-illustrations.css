@@ -1,0 +1,78 @@
+/*hover effect
+-----*/
+h2 {
+    margin-top:140px;
+    margin-left:50px;
+    font-family: corbel, sans-serif;
+}
+.digitalart {
+    margin:20px; 
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.hovereffect {
+    width: 130px;
+    height: 195px;
+    position: relative;
+    display: inline-block;
+}
+.hovereffect img {
+    width: 200px;
+}
+.hovereffect .sketch {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.hovereffect:hover .sketch {
+    display: inline;
+}
+.hovereffect1 {
+    width: 130px;
+    height: 195px;
+    position: relative;
+    display: inline-block;
+}
+.hovereffect1 img {
+    width: 200px;
+}
+.hovereffect1 .sketch1 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.hovereffect1:hover .sketch1 {
+    display: inline;
+}
+ .hovereffect2 {
+    width: 130px;
+    height: 195px;
+    position: relative;
+    display: inline-block;
+}
+.hovereffect2 img {
+    width: 200px;
+}
+.hovereffect2 .sketch2 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.hovereffect2:hover .sketch2 {
+    display: inline;
+}
+.photography {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.photography img {
+    width: 190px;
+}
